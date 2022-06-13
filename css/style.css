@@ -1,0 +1,110 @@
+:root{
+    --main-dark:#1e202b;
+    --main-light:#262936;
+    --text-main:#009ad8;
+}
+html{
+    background-color: var(--main-light);
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.bg-main-dark{
+    background-color: var(--main-dark);
+}
+.bg-main-light{
+    background-color: var(--main-light);
+}
+.bg-card-light{
+    background-color: #323544;
+}
+.bg-card-dark{
+    background-color: #262936;
+}
+.text-main{
+    color: var(--text-main);
+}
+.btn-main{
+    background-color: var(--text-main);
+    color:#fff;
+    border: none;
+    padding: 10px 35px;
+    border-radius: 30px;
+    transition:all 0.2s;
+}
+.btn-main:hover{
+    color:#fff;
+    background-color: #5cb8dd;
+    box-shadow: none !important;
+}
+/* nav */
+.brand-text .small{
+    font-size: 10px;
+}
+.brand-text .large{
+    font-size: 15px;
+    font-weight: 900;
+}
+.nav-link{
+    padding:5px 30px !important ;
+    font-size: 15px;
+    color: white !important;
+    margin: 0px 2px;
+    border: 2px var(--main-dark) solid !important;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+}
+.nav-link.active{
+    color: var(--text-main) !important;
+    border: 2px var(--text-main) solid !important;
+    border-radius: 20px;
+}
+.nav-link:hover{
+    color: var(--text-main) !important;
+    border-color: #009ad8 !important;
+}
+
+/* section */
+section{
+    background-image: url(../img/banner.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: var(--main-dark);
+}
+.search-bar input{
+    background-color: var(--main-dark);
+    border: none;
+    padding: 15px 25px;
+    text-decoration: none !important;
+}
+.search-bar input:focus{
+    background-color: var(--main-dark) !important;
+    caret-color: #fff;
+    border: none !important;
+    box-shadow: none !important;
+}
+.search-bar button{
+    top : 50%;
+    right: 5px;
+}
+.card{
+    min-height: 370px;
+}
+.card-bottom i,.card-bottom p, .card-bottom span{
+    color: rgba(191, 193, 200,0.7);
+    font-size:20px;
+}
+.social-icons i{
+    color:var(--text-main);
+    padding:10px;
+    font-size:20px;
+    background-color:var(--main-dark);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.social-icons i:hover{
+    background-color: var(--text-main);
+    color: #fff;
+}

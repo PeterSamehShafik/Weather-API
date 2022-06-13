@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-main-dark p-5">
+        <div class="container">
+          <a class="navbar-brand d-flex justify-content-center align-items-center" href="#">
+              <img src="img/logo.png" alt="logo" class="img-fluid">
+              <div class="brand-text d-flex flex-column justify-content-between ms-2">
+                  <p class="large m-0 h-auto">Weather</p>
+                  <p class="small m-0 h-auto">tagline goes here</p>
+              </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Live Cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">contact</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <section class="pb-5">
+        <div class="container overflow-auto py-5">
+            <div class="search-bar my-4 position-relative" >
+                <input type="text" class="form-control rounded-pill text-white" spellcheck="false" placeholder="Find your location" oninput="searchLocation(this.value)">
+                <button class="btn btn-main position-absolute translate-middle-y">Find</button>
+            </div>
+        </div>
+        <div class="container">
+          <div class="row gx-0">
+            <div class="col-lg-4 itemCard">          
+            </div>
+            <div class="col-lg-4 itemCard">       
+            </div>
+            <div class="col-lg-4 itemCard">
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <footer class="bg-main-light">
+      <div class="container overflow-auto">
+        <div class="row d-flex justify-content-between my-5 gy-3">
+          <div class="col-lg-8">
+            <div class="search-bar position-relative">
+              <input type="text" class="form-control rounded-pill text-white" placeholder="Enter your email to subscribe">
+              <button class="btn btn-main position-absolute translate-middle-y">Subscribe</button>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="social-icons text-lg-center">
+              <i class="fa-brands fa-facebook-f rounded-circle"></i>
+              <i class="fa-brands fa-twitter rounded-circle"></i>
+              <i class="fa-brands fa-google rounded-circle"></i>
+              <i class="fa-brands fa-pinterest rounded-circle"></i>
+            </div>
+          </div>
+          <p class="fa-xs text-white-50 mt-4">Copyright 2014 Company name. Designed by Themezy and made by Peter Sameh. All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+
+
+<script src="js/main.js"></script>
+</body>
