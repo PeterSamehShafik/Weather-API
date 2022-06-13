@@ -34,7 +34,8 @@ async function getData(location="cairo") {
 }
 
 async function displayData(){
-    itemCard[today].innerHTML= `
+    if(locationName != undefined){
+        itemCard[today].innerHTML= `
         <div class="card text-white bg-card-light mb-3 rounded-3">
             <div class="card-header d-flex justify-content-between align-items-center px-2 bg-main-light rounded-top-3">
             <p class="m-0" >${week[todayDate.getDay()]}</p>
@@ -95,7 +96,8 @@ async function displayData(){
             <span class="text-main mt-3">${condition[afterTomorrow]}</span>
         </div>
     </div>
-    `
+    `;
+    }
 }
 
 async function searchLocation(searchItem){
@@ -114,7 +116,7 @@ async function searchLocation(searchItem){
         }
     }
     else{
-        getData();
+        await getData();
         displayData();
     }
 }
